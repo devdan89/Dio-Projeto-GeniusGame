@@ -27,8 +27,8 @@ main {
 
   display: grid;
   grid-template-areas:
-    "green red"
-    "yellow blue";
+    "verde vermelho"
+    "amarelo azul";
   gap:10px;
 
   width: 700px;
@@ -36,25 +36,29 @@ main {
 }
 
 .green{
-    grid-area: green;
+    grid-area: verde;
     background-color: var(--verde);
     border-top-left-radius: 100%;
 }
 
 .red{
-    grid-area: red;
+    grid-area: vermelho;
     background-color: var(--vermelho);
     border-top-right-radius: 100%;
 }
 
 .yellow{
-    grid-area: yellow;
+    grid-area: amarelo;
     background-color: var(--amarelo);
     border-bottom-left-radius: 100%;
 }
 
 .blue{
-    grid-area: blue;
+    grid-area: azul;
     background-color: var(--azul);
     border-bottom-right-radius: 100%;
+}
+
+.selected{
+  opacity: 0.8;
 }
