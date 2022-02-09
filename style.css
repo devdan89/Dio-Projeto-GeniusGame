@@ -1,0 +1,60 @@
+:root{
+    --branco: #ffffff;
+    --azul: #0059ff;
+    --vermelho: #ff0000;
+    --verde: #008000;
+    --amarelo: #ffff00;
+}
+
+body {
+  background-color: rgb(154, 241, 241);
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.genius {
+  background-color: var(--branco);
+  border: 1px solid var(--branco);
+  border-radius: 100%;
+
+  display: grid;
+  grid-template-areas:
+    "green red"
+    "yellow blue";
+  gap:10px;
+
+  width: 700px;
+  height: 700px;
+}
+
+.green{
+    grid-area: green;
+    background-color: var(--verde);
+    border-top-left-radius: 100%;
+}
+
+.red{
+    grid-area: red;
+    background-color: var(--vermelho);
+    border-top-right-radius: 100%;
+}
+
+.yellow{
+    grid-area: yellow;
+    background-color: var(--amarelo);
+    border-bottom-left-radius: 100%;
+}
+
+.blue{
+    grid-area: blue;
+    background-color: var(--azul);
+    border-bottom-right-radius: 100%;
+}
